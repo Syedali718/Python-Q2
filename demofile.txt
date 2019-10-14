@@ -1,0 +1,3 @@
+
+mango	120
+apple	90
