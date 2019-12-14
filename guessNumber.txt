@@ -1,0 +1,30 @@
+import numpy as np
+
+def sochoDude(arr,lb,ub):
+    mid = int((lb+ub)/2)
+    print('Is your number : ',arr[mid])
+    question = input()
+    if(question=='n')or(question=='N'):
+        print('Is your number greater then : ',arr[mid])
+        q1 = input()
+        if((q1=='n')or(q1=='N')):
+            return sochoDude(arr,lb,mid-1)
+        elif((q1=='y')or(q1=='Y')):
+            return sochoDude(arr,mid+1,ub)
+    else:
+        #return sochoDude(arr,mid+1,ub)
+        print("your number is : ",arr[mid])
+    
+    
+    
+    
+#def binarySearchforgreaterthen50(arr,lb,ub):  
+arr = np.arange(1,101)
+shuru=0
+akhiri=len(arr)
+#while(True):
+   # opt=input('1) less then 50 2)greater then 50')
+    #if(opt=='1'):
+sochoDude(arr,shuru,akhiri)
+    #elif(opt=='2'):
+        # binarySearchforgreaterthen50(arr,lb,ub)
